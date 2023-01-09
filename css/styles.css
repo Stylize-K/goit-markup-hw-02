@@ -14,5 +14,14 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    color: var(--text)
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo-accent {
+    color: var(--primary_brand);
 }
 
