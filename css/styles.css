@@ -77,7 +77,7 @@ body {
 }
 
 .section-text {
-    /* color: var(--text); */
+    /* color: var(--text); цвет унаследуется из body*/
 }
 
 .footer {
@@ -94,6 +94,7 @@ body {
 .hero > .button {
     color: var(--white-color);
     background-color: var(--primary-brand);
+    cursor: pointer;
 
 }
 
@@ -105,11 +106,12 @@ body {
 .section .button {
     color: var(--primary-brand);
     background-color: var(--accent);
+    cursor: pointer;
 }
 
 .section .button:hover, .section .button:focus {
     color: var(--white-color);
-        background-color: var(--pressed-state);
+    background-color: var(--pressed-state);
 }
 
 
