@@ -1,27 +1,115 @@
 :root {
-    --primary_brand: #4D5AE5;
-    --pressed_state: #404BBF;
+    --primary-brand: #4D5AE5;
+    --pressed-state: #404BBF;
     --dark: #2E2F42;
     --success: #31D0AA;
     --text: #434455;
-    --subtle_text: #8E8F99;
+    --subtle-text: #8E8F99;
     --accent: #E7E9FC;
     --light: #F4F4FD;
-    --modal_overlay: #2E2F42;
-    --hero_background: #2E2F42;
-    --white: #ffffff;
+    --modal-overlay: #2E2F42;
+    --hero-background: #2E2F42;
+    --white-color: #ffffff;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: var(--text)
+    color: var(--text);
+    background-color: var(--white-color);
 }
 
-a {
+.link {
     text-decoration: none;
 }
 
-.logo-accent {
-    color: var(--primary_brand);
+.list {
+    list-style-type: none;
 }
+
+
+.header-logo {
+    color: var(--dark);
+}
+
+.logo-accent {
+    color: var(--primary-brand);
+}
+
+.site-nav .link {
+    color: var(--dark);
+}
+
+.site-nav .link.current {
+    color: var(--pressed-state);
+}
+
+.site-nav .link:hover, .site-nav .link:focus {
+    color: var(--pressed-state);
+}
+
+.contacts .link {
+    color: var(--text);
+}
+
+.contacts .link:hover,
+.contacts .link:focus {
+    color: var(--pressed-state);
+}
+
+.hero {
+    background-color: var(--dark);
+}
+
+.hero-title {
+    color: var(--white-color);
+}
+
+.section-title {
+    color: var(--dark);
+}
+
+.section-subtitle {
+    color: var(--dark);
+}
+
+.section-title {
+    color: var(--dark);
+}
+
+.section-text {
+    /* color: var(--text); */
+}
+
+.footer {
+    background-color: var(--dark);
+}
+
+.footer-logo {
+    color: var(--light)
+}
+.footer-text {
+    color: var(--accent)
+}
+
+.hero > .button {
+    color: var(--white-color);
+    background-color: var(--primary-brand);
+
+}
+
+.hero .button:hover, .hero .button:focus {
+    color: var(--white-color);
+    background-color: var(--pressed-state);
+}
+
+.section .button {
+    color: var(--primary-brand);
+    background-color: var(--accent);
+}
+
+.section .button:hover, .section .button:focus {
+    color: var(--white-color);
+        background-color: var(--pressed-state);
+}
+
 
