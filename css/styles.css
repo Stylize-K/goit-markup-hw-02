@@ -78,7 +78,6 @@ body {
     color: var(--white-color); 
     font-size: 56px;
     line-height: 1.07;
-    text-align: center;
 }
 
 .section-title {
@@ -86,7 +85,6 @@ body {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
-    text-align: center;
     text-transform: capitalize;
 }
 
