@@ -26,7 +26,7 @@ body {
 }
 
 .list {
-    list-style-type: none;
+    list-style: none;
 }
 
 .logo {
@@ -36,37 +36,49 @@ body {
     line-height: 1.3;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-}
-
-.header .logo {
-    color: var(--dark); 
-}
-
-.logo-accent {
     color: var(--primary-brand);
 }
 
-.site-nav .link {
+.header-logo {
+    color: var(--dark);
+}
+
+.footer-logo {
+    color: var(--white-color)
+}
+
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.nav-link {
     color: var(--dark);    
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
 }
 
-.site-nav .link.current {
+.nav-link.current {
     color: var(--pressed-state);
 }
 
-.site-nav .link:hover, .site-nav .link:focus {
+.nav-link:hover, .nav-link:focus {
     color: var(--pressed-state);
 }
 
-.contacts .link {
+.contacts-link {
     color: var(--text);
 }
 
-.contacts .link:hover,
-.contacts .link:focus {
+.contacts-link:hover,
+.contacts-link:focus {
     color: var(--pressed-state);
 }
 
@@ -76,11 +88,12 @@ body {
 
 .hero-title {
     color: var(--white-color); 
+    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
 }
 
-.section-title {
+.advantages-title, .examples-title, .team-title, .portfolio-title {
     color: var(--dark);
     font-weight: 700;
     font-size: 36px;
@@ -88,20 +101,21 @@ body {
     text-transform: capitalize;
 }
 
-.section-subtitle {
+.advantages-subtitle, .team-subtitle, .portfolio-subtitle {
     color: var(--dark);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
 }
 
+.portfolio-text {
+    color: var(--text);
+}
+
 .footer {
     background-color: var(--dark);
 }
 
-.footer .logo {
-    color: var(--light);
-}
 .footer-text {
     color: var(--accent)
 }
@@ -113,24 +127,25 @@ body {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    border: none;
 }
 
-.hero > .button {
+.hero-button {
     color: var(--white-color);
     background-color: var(--primary-brand);
 }
 
-.hero .button:hover, .hero .button:focus {
+.hero-button:hover, .hero-button:focus {
     color: var(--white-color);
     background-color: var(--pressed-state);
 }
 
-.section .button {
+.filter-button {
     color: var(--primary-brand);
     background-color: var(--accent);
 }
 
-.section .button:hover, .section .button:focus {
+.filter-button:hover, .filter-button:focus {
     color: var(--white-color);
     background-color: var(--pressed-state);
 }
